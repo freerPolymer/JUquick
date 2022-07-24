@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="JUquick:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/JUquick_jar</output-path>
+    <root id="archive" name="JUquick.jar">
+      <element id="module-output" name="JUquick" />
+      <element id="extracted-dir" path="D:/try/jackson-core-2.13.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/try/jackson-annotations-2.13.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/try/jackson-databind-2.13.3.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
