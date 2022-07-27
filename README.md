@@ -70,21 +70,25 @@ int operateCount, IConstant.OPERATE_TYPE operateType)
   
 --	public static String parseJSONString( Map<String,Object> source, 
 File resultFile,boolean format)
-将MAP对象转为JSON字符串,resultFile提供写入本地文件(null或非空)，
-format格式化(true|false)
+将MAP对象转为JSON字符串,resultFile提供写入本地文件(null或非空)，format格式化(true|false)
 
 - CodecsUtil	编码|解码工具类
 --	public static String MD5(@NotNull String res, String key)
 MD5加密 - 不可逆加密
+  
 --	public static String SHA1(@NotNull String res,String key)
 SHA1加密 - 不可逆
+  
 --	public static String DES(@NotNull String res, @NotNull String key,boolean isDecode)
 DES 可逆，用于加密解密
 --	public static String AES(@NotNull String res, @NotNull String key,boolean isDecode)
 AES 可逆
+  
 --	public static String XOR(@NotNull String res, @NotNull String key,boolean isDecode)
 XOR 可逆
+  
 --	public static int XOR(@Min(value = 1) int res, @NotNull String key)
 获取异或值
+  
 --	public static String Base64(@NotNull String res,boolean isDecode)
 Base64 可逆
