@@ -68,8 +68,7 @@ int operateCount, IConstant.OPERATE_TYPE operateType)
 --	public static String parseJSONString(Map<Object, Object> source,boolean format)
 将MAP对象转为JSON字符串，并提供格式化功能(true|false)
   
---	public static String parseJSONString( Map<String,Object> source, 
-File resultFile,boolean format)
+--	public static String parseJSONString( Map<String,Object> source, File resultFile,boolean format)
 将MAP对象转为JSON字符串,resultFile提供写入本地文件(null或非空)，format格式化(true|false)
 
 - CodecsUtil	编码|解码工具类
@@ -81,6 +80,7 @@ SHA1加密 - 不可逆
   
 --	public static String DES(@NotNull String res, @NotNull String key,boolean isDecode)
 DES 可逆，用于加密解密
+
 --	public static String AES(@NotNull String res, @NotNull String key,boolean isDecode)
 AES 可逆
   
