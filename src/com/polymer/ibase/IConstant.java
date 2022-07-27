@@ -85,4 +85,7 @@ public interface IConstant {
             "CLASS","JAVA","ZIP","JAR","RAR","HTML","EXE","SQL","JSON",
             "JS","JSP","LOG","MD","PY","PYC","TAZ","XLT"
     };
+    //-------- 字节码服务定义 -------
+    enum CODECS_TYPE{ENCODER,DECODER}
+
 }
