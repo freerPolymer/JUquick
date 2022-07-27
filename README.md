@@ -1,6 +1,10 @@
 # JUquick
 一个快速通用的工具项目
 
+依赖JAR文件：
+
+jackson-databind-2.13.3.jar,jackson-core-2.13.3.jar, jackson-annotations-2.13.3.jar,validation-api-2.0.1.Final.jar
+
 
 # 基础通用的工具类
 
