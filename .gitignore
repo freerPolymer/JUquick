@@ -24,7 +24,7 @@ hs_err_pid*
 
 # folder
 
-.idea
-JUquick.iml
-src/test
-out
+.idea 
+JUquick.iml 
+src/test 
+out 
