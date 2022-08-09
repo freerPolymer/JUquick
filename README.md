@@ -25,29 +25,29 @@
 #### CodecsUtil	编码|解码工具类
 
 ### CRPUtils
--	public  static  char getRandomChar()<br>
+- public  static  char getRandomChar() <br>  
 获得一个机器内置的随机字符，如 *、X、p等
-<br>
--	public  static  String getRandomChar(int length)<br>
+
+- public  static  String getRandomChar(int length)  <br> 
 获取一个指定长度的字符串，要求length取值在1~2056之间
-<br>
--	public  static  String getRandomChar(String sourceStr,int length)<br>
+
+- public  static  String getRandomChar(String sourceStr,int length)   <br> 
 获取一个字定义字符的指定长度字符串，sourceStr为空时，默认使用机器内置码生成
 ### NIOStreamUtils
--	public static StringBuilder nioChannelReader(String sourceFilePath) throws Exception <br>
+- public static StringBuilder nioChannelReader(String sourceFilePath) throws Exception  <br> 
 读取文本文件
-     <br>
--	public static List<Map<Object,Object>> nioChannelWriter(StringBuilder builder, String outFilePath) throws Exception <br>
+     
+- public static List<Map<Object,Object>> nioChannelWriter(StringBuilder builder, String outFilePath) throws Exception   <br> 
 写出文本文件
-     <br>
--	public static boolean transferTo(String frompath,String topath)throws Exception <br>
+      
+- public static boolean transferTo(String frompath,String topath)throws Exception   <br> 
 拷贝有效的文件
-     <br><br>
+      
 ### DateTimeUtils
--	public static String getNowFormatTime(IConstant.DATE_FORMAT format)<br>
+-	public static String getNowFormatTime(IConstant.DATE_FORMAT format)  <br> 
 返回指定格式的当前日期，如2022-07-18 14:38:07
-     <br>
--	public static boolean isLeapYear(String date)<br>
+      
+-	public static boolean isLeapYear(String date)  <br> 
 指定日期是否为闰年
      <br>
 -	public static long dayDiff(String startDate, String endDate, IConstant.DATE_TYPE dateType)<br>
