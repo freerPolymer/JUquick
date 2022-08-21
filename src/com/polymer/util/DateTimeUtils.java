@@ -25,7 +25,7 @@ public class DateTimeUtils {
      */
     public static String getNowFormatTime(IConstant.DATE_FORMAT format) {
         //格式校验
-        if(IConstant.DATE_FORMAT.getValus(format.name()).length()<1)return IConstant.NO_VALUE;
+        if(IConstant.DATE_FORMAT.getValus(format.name()).length()<1)return IConstant.STR_EMPTY_VALUE;
         LocalDateTime dateTime = LocalDateTime.now();
         DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern(IConstant.DATE_FORMAT.getValus(format.name()));
         return dateTimeFormatter.format(dateTime);
@@ -86,7 +86,7 @@ public class DateTimeUtils {
                 break;
         }
         DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern(IConstant.DATE_FORMAT.getValus(IConstant.DATE_FORMAT.DATE_YMD.name()));
-        return newTime!=null?dateTimeFormatter.format(newTime):IConstant.NO_VALUE;
+        return newTime!=null?dateTimeFormatter.format(newTime):IConstant.STR_EMPTY_VALUE;
     }
 
     /**
@@ -110,7 +110,7 @@ public class DateTimeUtils {
      */
     public static long dayDiff(String startDate, String endDate, IConstant.DATE_TYPE dateType) {
         //校验
-        if(startDate==null||endDate==null||startDate.length()<1||endDate.length()<1)return IConstant.NO_INT_VALUE;
+        if(startDate==null||endDate==null||startDate.length()<1||endDate.length()<1)return 0;
         DateTimeFormatter sf = DateTimeFormatter.ofPattern(IConstant.DATE_FORMAT.getValus(IConstant.DATE_FORMAT.DATE_YMD.name()));
         DateTimeFormatter ef = DateTimeFormatter.ofPattern(IConstant.DATE_FORMAT.getValus(IConstant.DATE_FORMAT.DATE_YMD.name()));
         LocalDateTime startDateTime = LocalDateTime.parse(startDate, sf);

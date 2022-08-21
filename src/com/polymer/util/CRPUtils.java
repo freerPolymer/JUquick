@@ -26,7 +26,7 @@ public class CRPUtils {
      */
     public  static  String getRandomChar(int length){
         //做校验防止内存溢出
-        if(length<IConstant.MIN_OPERAND||length>IConstant.MAX_OPERAND)return IConstant.NO_VALUE;
+        if(length<IConstant.MIN_OPERAND||length>IConstant.MAX_OPERAND)return IConstant.STR_EMPTY_VALUE;
         return CharProducer.getRandomChar(length);
     }
 
@@ -37,9 +37,9 @@ public class CRPUtils {
    @return String 字符串，至少返回一个
     */
     public  static  String getRandomChar(String sourceStr,int length){
-        if(length<IConstant.MIN_OPERAND||length>IConstant.MAX_OPERAND)return IConstant.NO_VALUE;
+        if(length<IConstant.MIN_OPERAND||length>IConstant.MAX_OPERAND)return IConstant.STR_EMPTY_VALUE;
         // 如果输入字符串为空，默认生产数字+字母的随机字符
-        if(sourceStr==null||sourceStr.length()==0)sourceStr=IConstant.INTEGER_ARRAY.toString();
+        if(sourceStr==null||sourceStr.length()==0)sourceStr=IConstant.NUMBER_STR+IConstant.LOWER_ABC_STR;
         return CharProducer.getRandomChar(sourceStr,length);
     }
 

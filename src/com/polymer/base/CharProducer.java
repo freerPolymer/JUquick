@@ -57,9 +57,9 @@ public class CharProducer {
      */
     public static char randomChar(){
         builder=new StringBuilder();
-        builder.append(IConstant.LOWER_ABC_ARRAY);
-        builder.append(IConstant.UPPER_ABC_ARRAY);
-        builder.append(IConstant.SYMBOL_ARRAY);
+        builder.append(IConstant.LOWER_ABC_STR);
+        builder.append(IConstant.UPPER_ABC_STR);
+        builder.append(IConstant.NUMBER_STR);
         return builder.charAt(random.nextInt(builder.length()));
     }
 
@@ -71,9 +71,9 @@ public class CharProducer {
     public static String getRandomChar(int length){
         if(length>0){
             builder=new StringBuilder();
-            builder.append(IConstant.UPPER_ABC_ARRAY);
-            builder.append(IConstant.INTEGER_ARRAY);
-            builder.append(IConstant.SYMBOL_ARRAY);
+            builder.append(IConstant.UPPER_ABC_STR);
+            builder.append(IConstant.NUMBER_STR);
+            builder.append(IConstant.LOWER_ABC_STR);
             int num = 0;
             StringBuffer b = new StringBuffer();
             while (true){
@@ -85,7 +85,7 @@ public class CharProducer {
             }
             return b.toString();
         }
-        return IConstant.NO_VALUE;
+        return IConstant.STR_EMPTY_VALUE;
     }
 
     /**

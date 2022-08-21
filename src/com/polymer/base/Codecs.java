@@ -189,7 +189,7 @@ public final class Codecs {
             byte[] resBytes = charset==null?res.getBytes():res.getBytes(charset);
             return base64(md.digest(resBytes));
         } catch (Exception e) {}
-        return IConstant.NO_VALUE;
+        return IConstant.STR_EMPTY_VALUE;
     }
 
     /**
@@ -216,7 +216,7 @@ public final class Codecs {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return IConstant.NO_VALUE;
+        return IConstant.STR_EMPTY_VALUE;
     }
 
     /**
@@ -251,7 +251,7 @@ public final class Codecs {
                 return new String(cipher.doFinal(parseHEXtoBinary(res)));
             }
         } catch (Exception e) {}
-        return IConstant.NO_VALUE;
+        return IConstant.STR_EMPTY_VALUE;
     }
 
     /**将16进制转换为二进制*/

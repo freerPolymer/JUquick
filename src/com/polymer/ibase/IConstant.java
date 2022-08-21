@@ -9,24 +9,16 @@ public interface IConstant {
     //统一的字符编码
     public static final String CHAR_SET="UTF-8";
     //空值
-    public static final String NO_VALUE="";
-    public static final int NO_INT_VALUE=0;
-    //常量小写字母数组
-    public static final char[] LOWER_ABC_ARRAY={'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
-    //常量大写字母数组
-    public static final char[] UPPER_ABC_ARRAY={'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
-    //常量符号数组
-    public static final char[] SYMBOL_ARRAY={'+','-','*','/','%','+','!','~',',','.','|','#','@','&','(',')','[',']','{','}','^','`','<','>','?','$'};
-    //常量数字数组
-    public static final char[] INTEGER_ARRAY=
-    {
-            '0' , '1' , '2' , '3' , '4' , '5' ,
-            '6' , '7' , '8' , '9' , 'a' , 'b' ,
-            'c' , 'd' , 'e' , 'f' , 'g' , 'h' ,
-            'i' , 'j' , 'k' , 'l' , 'm' , 'n' ,
-            'o' , 'p' , 'q' , 'r' , 's' , 't' ,
-            'u' , 'v' , 'w' , 'x' , 'y' , 'z'
-    };
+    public static final String STR_EMPTY_VALUE ="";
+    public static final int INT_DEFAULT_VALUE=0;
+    //常量小写字母
+    public static final String LOWER_ABC_STR="abcdefghijklmnopqrstuvwxyz";
+    //常量大写字母
+    public static final String UPPER_ABC_STR="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    //常量符号
+    public static final String SYMBOL_STR="+-*/%+!~,.|#@&()[]{}^`<>?$";
+    //常量数字
+    public static final String NUMBER_STR = "0123456789abcdef";
     //最小操作数
     public static final int MIN_OPERAND=1;
     //最大操作数
